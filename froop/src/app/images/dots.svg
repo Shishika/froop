@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        stroke: rgba(161,10,10,0.86);
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-93 -550)">
+    <g id="Ellipse_9" data-name="Ellipse 9" class="cls-1" transform="translate(93 550)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_10" data-name="Ellipse 10" class="cls-1" transform="translate(100 550)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" class="cls-1" transform="translate(107 550)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" class="cls-1" transform="translate(114 550)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" class="cls-2" transform="translate(93 550)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_14" data-name="Ellipse 14" class="cls-2" transform="translate(100 550)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_15" data-name="Ellipse 15" class="cls-2" transform="translate(107 550)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_16" data-name="Ellipse 16" class="cls-2" transform="translate(114 550)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_17" data-name="Ellipse 17" class="cls-2" transform="translate(93 557)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_18" data-name="Ellipse 18" class="cls-2" transform="translate(100 557)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_19" data-name="Ellipse 19" class="cls-2" transform="translate(107 557)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_20" data-name="Ellipse 20" class="cls-2" transform="translate(114 557)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_21" data-name="Ellipse 21" class="cls-2" transform="translate(93 564)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_22" data-name="Ellipse 22" class="cls-2" transform="translate(100 564)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_23" data-name="Ellipse 23" class="cls-2" transform="translate(107 564)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_24" data-name="Ellipse 24" class="cls-2" transform="translate(114 564)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_25" data-name="Ellipse 25" class="cls-2" transform="translate(93 571)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_26" data-name="Ellipse 26" class="cls-2" transform="translate(100 571)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_27" data-name="Ellipse 27" class="cls-2" transform="translate(107 571)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+    <g id="Ellipse_28" data-name="Ellipse 28" class="cls-2" transform="translate(114 571)">
+      <circle class="cls-3" cx="1" cy="1" r="1"/>
+      <circle class="cls-4" cx="1" cy="1" r="0.5"/>
+    </g>
+  </g>
+</svg>

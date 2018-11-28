@@ -1,0 +1,25 @@
+<section>
+  <div>
+    <img
+      class="image"
+      src="https://i.ytimg.com/vi/aj1k52rA_JU/maxresdefault.jpg"
+    />
+  </div>
+  <div class="item-details">
+    <div>
+      <img style="width: 20px;" src="../images/point.svg" />
+      <span>Chicken Kebab</span>
+      <img style="width: 50px;" src="../images/dots.svg"/>
+    </div>
+    <span>{{ 200 | currency: "INR":"symbol":"1.2-2" }}</span>
+  </div>
+  <h2>QUANTITY</h2>
+  <div>
+    <img (click)="removeItem()" src="../images/removeQuantity.svg" />
+    <span>{{ quantity }}</span>
+    <img (click)="addItem()" src="../images/addQuantity.svg" />
+  </div>
+  <button type="button" onclick="checkout">
+    Checkout
+  </button>
+</section>

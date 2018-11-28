@@ -1,0 +1,9 @@
+<section>
+  <div><img src="https://www.famouslogos.us/images/mcdonalds-logo.jpg" /></div>
+  <div *ngFor='let menu of menus' class="item-details">
+    <div>{{ menu.itemName }}</div>
+    <div>{{ menu.price }}</div>
+    <div>{{ menu.imageUrl }}</div>
+  </div>
+  <h2>QUANTITY</h2>
+</section>

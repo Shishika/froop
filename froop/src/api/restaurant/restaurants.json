@@ -1,0 +1,16 @@
+[
+    {
+      "restaurantName": "Burger King",
+      "distance": "1.6km",
+      "rating": 4,
+      "imageUrl1": "https://www.tasteofhome.com/wp-content/uploads/2017/10/exps28800_UG143377D12_18_1b_RMS-696x696.jpg",
+      "imageUrl2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXu_9Ff0bQSbkhvWWEQeTFPMohAzazb7p_1kiURkK9Bx7w96b8qA"
+    },
+    {
+      "restaurantName": "Mc Donalds",
+      "distance": "1.7km",
+      "rating": 5,
+      "imageUrl1": "https://www.tasteofhome.com/wp-content/uploads/2017/10/exps28800_UG143377D12_18_1b_RMS-696x696.jpg",
+      "imageUrl2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXu_9Ff0bQSbkhvWWEQeTFPMohAzazb7p_1kiURkK9Bx7w96b8qA"
+    }
+]

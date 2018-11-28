@@ -1,0 +1,22 @@
+[
+    {
+        "itemName": "Veg burger",
+        "price": "90",
+        "imageUrl": ""
+    },
+    {
+        "itemName": "Chicken burger",
+        "price": "100",
+        "imageUrl": ""
+    },
+    {
+        "itemName": "Veg Puff",
+        "price": "40",
+        "imageUrl": ""
+    },
+    {
+        "itemName": "Chicken Puff",
+        "price": "50",
+        "imageUrl": ""
+    }
+]
