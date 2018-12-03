@@ -1,0 +1,15 @@
+.image{
+    width: 100%;
+}
+.item-details{
+    margin: 20px;
+    height: 100px;
+    padding: 10px;
+    border: #95989a;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    .item-image{
+        float: right;
+        height: 50px;
+    }
+}

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { MenuService } from './../shared/services/menuService.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { IMenus } from '../interfaces/menu';
 
 @Component({
   selector: 'app-item',
@@ -6,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-quantity: number = 0;
-  constructor() { }
+  quantity = 0;
+  selectedItem: any;
+  constructor(private menuService: MenuService) {}
+
+  item: BehaviorSubject<any | null> = new BehaviorSubject<any | null>(null);
 
   removeItem(): any {
     this.quantity = this.quantity - 1;
@@ -16,6 +22,8 @@ quantity: number = 0;
   addItem(): any {
     this.quantity = this.quantity + 1;
   }
+
   ngOnInit() {
-  }
+   this.selectedItem = this.menuService.itemSelected;
+   }
 }

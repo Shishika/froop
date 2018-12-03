@@ -1,3 +1,6 @@
+import { MenuComponent } from './menu/menu.component';
+import { RestaurantService } from './shared/services/restaurantService.service';
+import { MenuService } from './shared/services/menuService.service';
 import { AppRoutingModule } from './app-router.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -8,7 +11,6 @@ import { StarComponent } from './shared/star/star.component';
 import { ItemComponent } from './item/item.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -18,14 +20,14 @@ import { MenuComponent } from './menu/menu.component';
     StarComponent,
     ItemComponent,
     CheckoutComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,10 +8,10 @@
   <div class="item-details">
     <div>
       <img style="width: 20px;" src="../images/point.svg" />
-      <span>Chicken Kebab</span>
+      <span>{{ selectedItem.itemName }}</span>
       <img style="width: 50px;" src="../images/dots.svg"/>
     </div>
-    <span>{{ 200 | currency: "INR":"symbol":"1.2-2" }}</span>
+    <span>{{ selectedItem.price | currency: "INR":"symbol":"1.2-2" }}</span>
   </div>
   <h2>QUANTITY</h2>
   <div>
