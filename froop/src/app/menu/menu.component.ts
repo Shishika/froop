@@ -1,3 +1,5 @@
+import { RestaurantService } from './../shared/services/restaurantService.service';
+import { LandingComponent } from './../landing/landing.component';
 import { MenuService } from './../shared/services/menuService.service';
 import { IMenus } from './../interfaces/menu';
 import { Component, OnInit } from '@angular/core';
@@ -9,13 +11,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  menus: IMenus[];
+  menus: any[];
   selectedItem: any;
 
-  constructor(private menuService: MenuService, private router: Router) {}
+  constructor(private menuService: MenuService, private restaurantService: RestaurantService, private router: Router) {}
 
   ngOnInit() {
-    this.menuService.getMenus().subscribe(menus => this.menus = menus);
+    this.menuService.getMenus('Burger King').subscribe(menus => {
+      this.menus = menus[0];
+      console.log(this.menus);
+    });
   }
 
   navigate() {
@@ -28,4 +33,3 @@ export class MenuComponent implements OnInit {
     this.menuService.onSelect(this.selectedItem);
   }
 }
-

@@ -1,0 +1,10 @@
+[
+    {
+      "restaurantId": "1",
+      "Url": "'api/menus/burgerKingMenu.json'"
+    },
+    {
+      "restaurantId": "2",
+      "Url": "'api/menus/mcDMenu.json'"
+    }
+]

@@ -1,26 +1,28 @@
+import { RestaurantService } from './restaurantService.service';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { IMenus } from '../../interfaces/menu';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
-
-  private menuUrl = 'api/menus/mcDMenu.json';
-  itemSelected: BehaviorSubject<any | null> = new BehaviorSubject<any | null>(null);
-
+  private menuUrl = 'api/menus/menu.json';
+  itemSelected: BehaviorSubject<any | null> = new BehaviorSubject<any | null>( null);
   constructor(private http: HttpClient) {}
 
-  getMenus(): Observable<IMenus[]> {
-      return this.http.get<IMenus[]>(this.menuUrl);
+  getMenus(restaurantName): Observable<IMenus> {
+    return this.http.get(this.menuUrl).pipe(
+      map((data: any) => {
+        return data.list.filter(value => value.name === restaurantName);
+      })
+    );
   }
 
   onSelect(item): any {
-  console.log(item + 'in service');
     this.itemSelected = item;
-    this.itemSelected.subscribe
-    ((res) => this.itemSelected.next(res));
+    // this.itemSelected.next(this.itemSelected);
   }
 }

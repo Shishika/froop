@@ -1,0 +1,54 @@
+{
+  "list": [
+    {
+      "name": "Burger King",
+      "items": [
+        {
+          "itemName": "Veg mini burger",
+          "price": "40",
+          "imageUrl": "https://www.vegrecipesofindia.com/wp-content/uploads/2015/05/veggie-burger-recipe-5-500x375.jpg"
+        },
+        {
+          "itemName": "Chicken mini burger",
+          "price": "50",
+          "imageUrl": "https://assets.marthastewart.com/styles/wmax-750/d18/med103746_0508_chk/med103746_0508_chk_brgr_horiz.jpg?itok=Sti5XNhy"
+        },
+        {
+          "itemName": "Veg rings",
+          "price": "40",
+          "imageUrl": "https://i0.wp.com/traditionallymodernfood.com/wp-content/uploads/2017/03/IMG_42301.jpg?resize=4272%2C2848"
+        },
+        {
+          "itemName": "Chicken rings",
+          "price": "50",
+          "imageUrl": "https://vaya.in/recipes/wp-content/uploads/2018/02/chicken_puff.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mc Donalds",
+      "items": [
+        {
+          "itemName": "Veg burger",
+          "price": "90",
+          "imageUrl": "https://www.vegrecipesofindia.com/wp-content/uploads/2015/05/veggie-burger-recipe-5-500x375.jpg"
+        },
+        {
+          "itemName": "Chicken burger",
+          "price": "100",
+          "imageUrl": "https://assets.marthastewart.com/styles/wmax-750/d18/med103746_0508_chk/med103746_0508_chk_brgr_horiz.jpg?itok=Sti5XNhy"
+        },
+        {
+          "itemName": "Veg Puff",
+          "price": "40",
+          "imageUrl": "https://i0.wp.com/traditionallymodernfood.com/wp-content/uploads/2017/03/IMG_42301.jpg?resize=4272%2C2848"
+        },
+        {
+          "itemName": "Chicken Puff",
+          "price": "50",
+          "imageUrl": "https://vaya.in/recipes/wp-content/uploads/2018/02/chicken_puff.jpg"
+        }
+      ]
+    }
+  ]
+}

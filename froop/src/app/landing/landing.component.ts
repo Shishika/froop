@@ -1,6 +1,7 @@
+import { RestaurantService } from './../shared/services/restaurantService.service';
+import { MenuService } from './../shared/services/menuService.service';
 import { IRestaurants } from '../interfaces/restaurants';
 import { Component, OnInit } from '@angular/core';
-import { RestaurantService } from '../shared/services/RestaurantService.Service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -11,7 +12,9 @@ import {Router} from '@angular/router';
 
 export class LandingComponent implements OnInit {
   restaurants: IRestaurants[];
-  constructor(private restaurantService: RestaurantService,
+  selectedRestaurant: any;
+
+  constructor(private restaurantService: RestaurantService, private menuService: MenuService,
     private router: Router) {
 
    }
@@ -19,9 +22,11 @@ export class LandingComponent implements OnInit {
    this.restaurantService.getRestaurants().subscribe(
       restaurants => this.restaurants = restaurants
     );
+    this.menuService.getMenus(this.selectedRestaurant);
   }
 
   navigate() {
     this.router.navigateByUrl('/menu');
+    this.menuService.getMenus(this.selectedRestaurant);
   }
 }
