@@ -9,11 +9,16 @@ import { IRestaurants } from '../../interfaces/restaurants';
 })
 export class RestaurantService {
   private restaurantUrl = 'api/restaurant/restaurants.json';
+  name: string;
 
   constructor(private http: HttpClient) {}
 
   getRestaurants(): Observable<IRestaurants[]> {
       return this.http.get<IRestaurants[]>(this.restaurantUrl);
+  }
+
+  onSelectRestaurant(restaurantName: string) {
+    this.name = restaurantName;
   }
 }
 

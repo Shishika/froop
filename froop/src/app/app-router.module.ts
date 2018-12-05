@@ -1,5 +1,5 @@
+import { AddToBasketComponent } from './add-to-basket/add-to-basket.component';
 import { MenuComponent } from './menu/menu.component';
-import { CheckoutComponent } from './checkout/checkout.component';
 import { ItemComponent } from './item/item.component';
 import { LandingComponent } from './landing/landing.component';
 import { NgModule } from '@angular/core';
@@ -24,8 +24,8 @@ const routes: Routes = [
         component: ItemComponent
     },
     {
-        path: 'checkout',
-        component: CheckoutComponent
+        path: 'addToBasket',
+        component: AddToBasketComponent
     }
 ];
 

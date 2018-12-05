@@ -13,13 +13,13 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
   menus: any[];
   selectedItem: any;
-
+  name: string;
   constructor(private menuService: MenuService, private restaurantService: RestaurantService, private router: Router) {}
 
   ngOnInit() {
-    this.menuService.getMenus('Burger King').subscribe(menus => {
-      this.menus = menus[0];
-      console.log(this.menus);
+    this.name = this.restaurantService.name;
+    this.menuService.getMenus(this.name).subscribe(menus => {
+    this.menus = menus[0];
     });
   }
 
@@ -29,7 +29,6 @@ export class MenuComponent implements OnInit {
 
   onSelect(item: any): void {
     this.selectedItem = item;
-    console.log(this.selectedItem);
     this.menuService.onSelect(this.selectedItem);
   }
 }

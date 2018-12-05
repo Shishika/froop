@@ -12,7 +12,7 @@ import {Router} from '@angular/router';
 
 export class LandingComponent implements OnInit {
   restaurants: IRestaurants[];
-  selectedRestaurant: any;
+  restaurantName: string;
 
   constructor(private restaurantService: RestaurantService, private menuService: MenuService,
     private router: Router) {
@@ -28,5 +28,10 @@ export class LandingComponent implements OnInit {
   navigate() {
     this.router.navigateByUrl('/menu');
     this.menuService.getMenus(this.selectedRestaurant);
+  }
+
+  selectedRestaurant(restaurant: string) {
+    this.restaurantName = restaurant;
+    this.restaurantService.onSelectRestaurant(this.restaurantName);
   }
 }

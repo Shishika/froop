@@ -1,25 +1,23 @@
 <section>
-  <div>
-    <img
-      class="image"
-      src="https://i.ytimg.com/vi/aj1k52rA_JU/maxresdefault.jpg"
-    />
-  </div>
-  <div class="item-details">
-    <div>
-      <img style="width: 20px;" src="../images/point.svg" />
-      <span>{{ selectedItem.itemName }}</span>
-      <img style="width: 50px;" src="../images/dots.svg"/>
+  <div><img class="image" src="{{ selectedItem.imageUrl }}" /></div>
+  <div class="main">
+    <div class="item-details">
+      <div>
+        <img style="width: 20px;" src="../images/point.svg" />
+        <span class="item-name">{{ selectedItem.itemName }}</span>
+        <!-- <img style="width: 50px;" src="../images/dots.svg"/> -->
+      </div>
+      <span>{{ selectedItem.price | currency: "INR":"symbol":"1.2-2" }}</span>
     </div>
-    <span>{{ selectedItem.price | currency: "INR":"symbol":"1.2-2" }}</span>
+    <div class="quantity">
+      <h2>QUANTITY</h2>
+      <div>
+        <img (click)="removeItem()" src="../images/removeQuantity.svg" />
+        <span>{{ quantity }}</span>
+        <img (click)="addItem()" src="../images/addQuantity.svg" />
+      </div>
+    </div>
+    <div><h2>SPECIAL INSTRUCTIONS</h2></div>
   </div>
-  <h2>QUANTITY</h2>
-  <div>
-    <img (click)="removeItem()" src="../images/removeQuantity.svg" />
-    <span>{{ quantity }}</span>
-    <img (click)="addItem()" src="../images/addQuantity.svg" />
-  </div>
-  <button type="button" onclick="checkout">
-    Checkout
-  </button>
 </section>
+<app-add-to-basket [itemQuantity]="quantity"></app-add-to-basket>

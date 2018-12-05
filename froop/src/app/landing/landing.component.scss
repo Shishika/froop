@@ -5,8 +5,11 @@
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+%card-images {
+  height: 66px;
+  width: 66px;
+}
 .main {
-  font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
   .location {
@@ -24,16 +27,20 @@
     padding: 0px 0px 0px 15px;
     .card {
       @extend %shared;
-      width: 150px;
+      width: 200px;
       height: 155px;
       margin-right: 15px;
 
       .rating {
         text-align: right;
       }
-      .card-images {
-        height: 66px;
-        width: 66px;
+      .card-image1 {
+        @extend %card-images;
+        padding-right: 1.3px;
+      }
+      .card-image2 {
+        @extend %card-images;
+        padding-left: 1.3px;
       }
     }
     .card2 {
@@ -62,6 +69,7 @@
 }
 .restaurant-name {
   font-weight: bold;
+  padding-bottom: 3px;
 }
 .distance {
   color: #95989a;
