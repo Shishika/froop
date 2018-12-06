@@ -11,6 +11,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class ItemComponent implements OnInit {
   @ViewChild(AddToBasketComponent) basket;
   public quantity = 0;
+  public newQuantity: number;
   selectedItem: any;
   constructor(private menuService: MenuService) {}
 
@@ -18,16 +19,16 @@ export class ItemComponent implements OnInit {
 
   removeItem(): any {
     if (this.quantity > 0) {
-      --this.quantity;
+      this.newQuantity = --this.quantity;
       this.basket.method();
-      console.log(this.quantity);
+      console.log('removing ' + this.newQuantity);
     }
   }
 
   addItem(): any {
-    ++this.quantity;
+    this.newQuantity = ++this.quantity;
     this.basket.method();
-    console.log(this.quantity);
+    console.log('adding ' + this.newQuantity);
   }
 
   ngOnInit() {

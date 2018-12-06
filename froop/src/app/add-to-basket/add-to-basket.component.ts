@@ -22,6 +22,6 @@ export class AddToBasketComponent implements OnInit {
     this.quantity = this.itemQuantity;
     this.price = this.quantity * this.selectedItem.price;
     console.log(this.price);
-    console.log(this.quantity);
+    console.log('in add to basket ' + this.itemQuantity);
   }
 }
