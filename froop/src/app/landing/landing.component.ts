@@ -1,8 +1,8 @@
-import { RestaurantService } from './../shared/services/restaurantService.service';
-import { MenuService } from './../shared/services/menuService.service';
+import { RestaurantService } from '../shared/services/restaurantService.service';
+import { MenuService } from '../shared/services/menuService.service';
 import { IRestaurants } from '../interfaces/restaurants';
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -10,7 +10,8 @@ import {Router} from '@angular/router';
   styleUrls: ['./landing.component.scss']
 })
 
-export class LandingComponent implements OnInit {
+export class LandingComponent implements OnInit  {
+  SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   restaurants: IRestaurants[];
   restaurantName: string;
 
@@ -18,6 +19,7 @@ export class LandingComponent implements OnInit {
     private router: Router) {
 
    }
+
   ngOnInit() {
    this.restaurantService.getRestaurants().subscribe(
       restaurants => this.restaurants = restaurants

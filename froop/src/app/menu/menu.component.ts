@@ -1,7 +1,7 @@
-import { RestaurantService } from './../shared/services/restaurantService.service';
-import { LandingComponent } from './../landing/landing.component';
-import { MenuService } from './../shared/services/menuService.service';
-import { IMenus } from './../interfaces/menu';
+import { RestaurantService } from '../shared/services/restaurantService.service';
+import { LandingComponent } from '../landing/landing.component';
+import { MenuService } from '../shared/services/menuService.service';
+import { IMenus } from '../interfaces/menu';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 

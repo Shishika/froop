@@ -1,6 +1,6 @@
-import { AddToBasketComponent } from './../add-to-basket/add-to-basket.component';
+import { AddToBasketComponent } from '../add-to-basket/add-to-basket.component';
 import { BehaviorSubject } from 'rxjs';
-import { MenuService } from './../shared/services/menuService.service';
+import { MenuService } from '../shared/services/menuService.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -11,7 +11,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class ItemComponent implements OnInit {
   @ViewChild(AddToBasketComponent) basket;
   public quantity = 0;
-  public newQuantity: number;
+
   selectedItem: any;
   constructor(private menuService: MenuService) {}
 
@@ -19,16 +19,16 @@ export class ItemComponent implements OnInit {
 
   removeItem(): any {
     if (this.quantity > 0) {
-      this.newQuantity = --this.quantity;
+      --this.quantity;
       this.basket.method();
-      console.log('removing ' + this.newQuantity);
+      console.log('removing ' + this.quantity);
     }
   }
 
   addItem(): any {
-    this.newQuantity = ++this.quantity;
+    ++this.quantity;
     this.basket.method();
-    console.log('adding ' + this.newQuantity);
+    console.log('adding ' + this.quantity);
   }
 
   ngOnInit() {

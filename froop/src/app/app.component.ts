@@ -1,3 +1,4 @@
+import { RoutingSate } from './shared/services/navigationService.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'froop';
+  constructor(routingState: RoutingSate) {
+    routingState.loadRouting();
+  }
 }

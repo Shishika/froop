@@ -17,11 +17,14 @@
     display: flex;
     align-items: center;
   }
+  .swiper-container {
+    width: 600px;
+    height: 300px;
+  }
   .burger-landing-page {
     width: 100%;
     height: 150px;
   }
-
   .cards {
     display: flex;
     padding: 0px 0px 0px 15px;
@@ -57,11 +60,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-      .bottom-nav-image {
-        width: 30px;
-        height: 30px;
-      }
+    .bottom-nav-image {
+      width: 30px;
+      height: 30px;
     }
+  }
 }
 .header {
   margin: 15px;

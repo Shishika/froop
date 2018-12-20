@@ -1,5 +1,5 @@
-import { MenuService } from './../shared/services/menuService.service';
-import { Component, OnInit, OnChanges, Input } from '@angular/core';
+import { MenuService } from '../shared/services/menuService.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-add-to-basket',
@@ -16,10 +16,11 @@ export class AddToBasketComponent implements OnInit {
 
   ngOnInit() {
     this.selectedItem = this.menuService.itemSelected;
+    this.itemQuantity = 0;
   }
 
   public method() {
-    this.quantity = this.itemQuantity;
+    this.quantity = this.itemQuantity ;
     this.price = this.quantity * this.selectedItem.price;
     console.log(this.price);
     console.log('in add to basket ' + this.itemQuantity);

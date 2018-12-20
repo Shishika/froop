@@ -1,3 +1,4 @@
+<app-back-icon></app-back-icon>
 <section>
   <div><img class="image" src="{{ selectedItem.imageUrl }}" /></div>
   <div class="main">
@@ -19,5 +20,7 @@
     </div>
     <div><h2>SPECIAL INSTRUCTIONS</h2></div>
   </div>
-</section>
-<app-add-to-basket [itemQuantity]="newQuantity"></app-add-to-basket>
+</section> 
+<div *ngIf="quantity>0">
+  <app-add-to-basket [itemQuantity]="quantity"></app-add-to-basket>
+</div>
