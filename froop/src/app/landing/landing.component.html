@@ -4,9 +4,19 @@
 </head>
 <section class="main">
   <nav><p class="location">ASAP -> Pragathi nagar</p></nav>
-  <div>
+  <!-- <div>
     <img class="burger-landing-page" src="https://s.abcnews.com/images/Business/ht_whopper_ad_lb_150928_12x5_992.jpg"/>
-  </div>
+  </div> -->
+  <div>
+    <div class="swipe-box"  
+        *ngFor="let avatar of avatars; let idx=index"
+        (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)" 
+        [class.visible]="avatar.visible" [class.hidden]="!avatar.visible">
+        <div>
+            <img [src]="avatar.image" [alt]="avatar.name" style="width: 100%; height: 165px;">
+        </div>
+    </div>
+</div>
     <div><p class="header">Favourites</p></div>
   <div class="cards">
     <div *ngFor="let restaurant of restaurants" class="card">
@@ -46,12 +56,10 @@
     </div>
   </div>
   <nav class="bottom-nav">
-    <div><img class="bottom-nav-image" src="../images/Home.svg" /></div>
-    <div><img class="bottom-nav-image" src="../images/search.svg" /></div>
-    <div><img class="bottom-nav-image" src="../images/froops.svg" /></div>
-    <div>
-      <img class="bottom-nav-image" src="../images/notifications.svg" />
-    </div>
-    <div><img class="bottom-nav-image" src="../images/profile.svg" /></div>
+    <a class="nav-image"><img class="bottom-nav-image" src="../images/Home.svg" /></a>
+    <a class="nav-image"><img class="bottom-nav-image" src="../images/search.svg" /></a>
+    <a class="nav-image"><img class="bottom-nav-image" src="../images/froops.svg" /></a>
+    <a class="nav-image"><img class="bottom-nav-image" src="../images/notifications.svg" /></a>
+    <a class="nav-image"><img class="bottom-nav-image" src="../images/profile.svg" /></a>
   </nav>
 </section>
