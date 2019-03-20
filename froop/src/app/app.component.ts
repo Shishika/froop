@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'froop';
+
+  public data:any=[]
+
   constructor(routingState: RoutingSate) {
     routingState.loadRouting();
   }

@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  menus: any[];
+  menus: any = [];
   selectedItem: any;
   name: string;
   constructor(private menuService: MenuService, private restaurantService: RestaurantService, private router: Router) {}

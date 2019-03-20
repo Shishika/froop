@@ -9,7 +9,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  @ViewChild(AddToBasketComponent) basket;
+  // @ViewChild(AddToBasketComponent) basket;
   public quantity = 0;
 
   selectedItem: any;
@@ -20,15 +20,11 @@ export class ItemComponent implements OnInit {
   removeItem(): any {
     if (this.quantity > 0) {
       --this.quantity;
-      this.basket.method();
-      console.log('removing ' + this.quantity);
     }
   }
 
   addItem(): any {
     ++this.quantity;
-    this.basket.method();
-    console.log('adding ' + this.quantity);
   }
 
   ngOnInit() {

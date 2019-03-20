@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 
 export class LandingComponent implements OnInit  {
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
-  restaurants: IRestaurants[];
+  restaurants: any;
   restaurantName: string;
 
   constructor(private restaurantService: RestaurantService, private menuService: MenuService,

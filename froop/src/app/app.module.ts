@@ -1,3 +1,4 @@
+import { AddBasketService } from './shared/services/addBasketService';
 import { BackIconComponent } from './shared/components/back-icon/back-icon.component';
 import { MenuComponent } from './menu/menu.component';
 import { RestaurantService } from './shared/services/restaurantService.service';
@@ -14,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AddToBasketComponent } from './add-to-basket/add-to-basket.component';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
-
+import { StorageServiceModule} from 'angular-webstorage-service';
 
 export class MyHammerConfig extends HammerGestureConfig  {
 
@@ -27,16 +28,17 @@ export class MyHammerConfig extends HammerGestureConfig  {
     ItemComponent,
     MenuComponent,
     AddToBasketComponent,
-    BackIconComponent
+    BackIconComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    StorageServiceModule
   ],
-  providers: [MenuService, RestaurantService,
+  providers: [MenuService, RestaurantService, AddBasketService,
     {
       provide: HAMMER_GESTURE_CONFIG,
       useClass: MyHammerConfig

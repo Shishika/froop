@@ -21,4 +21,3 @@ export class RestaurantService {
     this.name = restaurantName;
   }
 }
-

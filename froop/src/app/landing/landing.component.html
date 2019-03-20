@@ -20,10 +20,7 @@
     <div><p class="header">Favourites</p></div>
   <div class="cards">
     <div *ngFor="let restaurant of restaurants" class="card">
-      <div
-        (click)="navigate()"
-        (click)="selectedRestaurant(restaurant.restaurantName)"
-      >
+      <div (click)="navigate()" (click)="selectedRestaurant(restaurant.restaurantName)">
         <div>
           <div class="restaurant-name">{{ restaurant.restaurantName }}</div>
           <div class="distance">{{ restaurant.distance }}</div>
