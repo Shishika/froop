@@ -1,3 +1,4 @@
+import { LocalStorageService } from './../shared/services/localStorageService';
 import { RestaurantService } from '../shared/services/restaurantService.service';
 import { MenuService } from '../shared/services/menuService.service';
 import { IRestaurants } from '../interfaces/restaurants';
@@ -15,7 +16,7 @@ export class LandingComponent implements OnInit  {
   restaurants: any;
   restaurantName: string;
 
-  constructor(private restaurantService: RestaurantService, private menuService: MenuService,
+  constructor(private restaurantService: RestaurantService, private menuService: MenuService, private localStorageService: LocalStorageService,
     private router: Router) {
    }
 
@@ -80,4 +81,14 @@ swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {
     this.restaurantName = restaurant;
     this.restaurantService.onSelectRestaurant(this.restaurantName);
   }
+
+  // setvalue() {
+  //   this.quantity++;
+  //   this.cartItems.push({price: this.price, quantity: this.quantity, itemName: 'Burger'})
+  //   this.localStorageService.saveItem(this.cartItems);
+  // }
+
+  // getvalue() {
+  //  this.localStorageService.getItem();
+  // }
 }

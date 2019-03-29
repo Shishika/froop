@@ -1,14 +1,15 @@
 <app-back-icon></app-back-icon>
-  <section style="flex-direction: column;">
-    <div>
-      <img class="image" src="https://www.famouslogos.us/images/mcdonalds-logo.jpg"/>
-    </div>
-    <div *ngFor="let menu of menus.items" class="item-details">
-      <div (click)="navigate()" (click)="onSelect(menu)">
-        <div class="menu-name">{{ menu?.itemName }}</div>
-        <div class="menu-price">{{ menu?.price | currency: "INR":"symbol":"1.2-2" }}</div>
-        <img class="item-image" src="{{ menu?.imageUrl }}" />
+<section style="flex-direction: column;">
+  <div>
+    <img class="image" src="https://www.famouslogos.us/images/mcdonalds-logo.jpg"/>
+  </div>
+  <div *ngFor="let menu of menus.items" class="item-details">
+    <div (click)="navigate()" (click)="onSelect(menu)">
+      <div class="menu-name">{{ menu?.itemName }}</div>
+      <div class="menu-price">
+        {{ menu?.price | currency: "INR":"symbol":"1.2-2" }}
       </div>
+      <img class="item-image" src="{{ menu?.imageUrl }}" />
     </div>
-  </section>
-  
+  </div>
+</section>

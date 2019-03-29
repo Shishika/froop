@@ -1,0 +1,13 @@
+<app-back-icon></app-back-icon>
+<div class="items"></div>
+  <div *ngFor="let cartItem of cartItems" class="items-list">
+    <p><span>ItemName:</span> {{ cartItem.itemName }}</p>
+    <p><span>Quantity:</span> {{ cartItem.quantity }}</p>
+    <p><span>Price:</span> {{ cartItem.price }}</p>
+  </div>
+
+<span class="total-price"><b>TOTAL AMOUNT: </b> <span class="amount">{{ totalPrice }}</span></span>
+
+<div class="place-order">
+  <button class="place-order-button" (click)="navigate()">Place Order</button>
+</div>

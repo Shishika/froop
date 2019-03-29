@@ -1,22 +1,27 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
-import { SESSION_STORAGE, StorageService } from 'angular-webstorage-service';
-
-const STORAGE_KEY = 'hi';
+import { ICartItems } from 'src/app/interfaces/ICartItems';
+import { analyzeAndValidateNgModules } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LocalStorageService {
 
-    
-    constructor(@Inject(SESSION_STORAGE) private storage: StorageService) {
- 
-    }
+  cartValue: ICartItems[] = [];
+  value: any;
+  totalPrice: number = 0;
 
-    public doSomething(): number {
-        const awesomenessLevel: number = this.storage.get(STORAGE_KEY) || 1337;
-        this.storage.set(STORAGE_KEY, awesomenessLevel + 1);
-        return awesomenessLevel;
-    }  
+  saveItem(value) {
+    this.value = this.cartValue.push(value);
+    console.log(this.value);
+  }
+
+  getItem() {
+    console.log(this.cartValue);
+    return this.cartValue;
+  }
+
+  price(totalValue) {
+    this.totalPrice = totalValue + this.totalPrice;
+  }
 }

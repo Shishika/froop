@@ -1,7 +1,9 @@
+import { PlaceOrderComponent } from './place-order/place-order.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { LandingComponent } from './landing/landing.component';
 import { AddToBasketComponent } from './add-to-basket/add-to-basket.component';
 import { MenuComponent } from './menu/menu.component';
 import { ItemComponent } from './item/item.component';
-import { LandingComponent } from './landing/landing.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -26,6 +28,14 @@ const routes: Routes = [
     {
         path: 'addToBasket',
         component: AddToBasketComponent
+    },
+    {
+        path: 'checkout',
+        component: CheckoutComponent
+    },
+    {
+        path: 'placeOrder',
+        component: PlaceOrderComponent
     }
 ];
 
